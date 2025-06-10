@@ -1,5 +1,9 @@
 import os
-import json
+import sys
+
+# Adiciona a pasta pai (onde está o todo.py) no sys.path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import todo
 
 TEST_FILE = "test_todo.json"
